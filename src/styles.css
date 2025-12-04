@@ -1,1 +1,161 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===========================
+   VARIABLES DE DISEÑO
+   =========================== */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --secondary: #4b5563;
+  --background: #f3f4f6;
+  --card-bg: #ffffff;
+  --border: #d1d5db;
+  --radius: 12px;
+  --transition: .25s ease;
+  --shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   RESET ELEGANTE
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+html, body {
+  background: var(--background);
+  color: #111827;
+  height: 100%;
+}
+
+/* Eliminación del highlight feo en móviles */
+button, input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ===========================
+   ESTILO GLOBAL DE TEXTOS
+   =========================== */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #111827;
+}
+
+p, a, label {
+  font-weight: 400;
+  color: #374151;
+}
+
+/* ===========================
+   BOTONES GLOBALES
+   =========================== */
+
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 16px;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  background: white;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 12px 18px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* ===========================
+   INPUTS GLOBALES
+   =========================== */
+input, select, textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: var(--radius);
+  font-size: 15px;
+  transition: var(--transition);
+  background: #fff;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+/* ===========================
+   TARJETAS GLOBALES
+   =========================== */
+.card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ===========================
+   LINKS
+   =========================== */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* ===========================
+   CONTENEDORES GENERALES
+   =========================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===========================
+   ANIMACIONES GLOBALes
+   =========================== */
+.fade-in {
+  animation: fadeIn .6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 600px) {
+  .card {
+    padding: 18px;
+  }
+
+  .btn, .btn-secondary {
+    padding: 12px;
+  }
+}

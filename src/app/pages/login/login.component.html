@@ -1,0 +1,33 @@
+<div class="login-container">
+
+  <div class="card">
+
+    <h2>Iniciar Sesión</h2>
+    <p class="subtitle">Bienvenido de nuevo</p>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" [(ngModel)]="email" placeholder="usuario@gmail.com" />
+    </div>
+
+    <div class="form-group">
+      <label>Contraseña</label>
+      <input type="password" [(ngModel)]="password" placeholder="••••••••" />
+    </div>
+
+    <p class="error" *ngIf="error">{{ error }}</p>
+
+    <button class="btn" (click)="iniciarSesion()">Ingresar</button>
+
+    <div class="extra">
+      <p>¿No tienes una cuenta?</p>
+
+      <!-- BOTÓN REAL -->
+      <button class="btn-secondary" routerLink="/register">
+        Crear cuenta
+      </button>
+    </div>
+
+  </div>
+
+</div>

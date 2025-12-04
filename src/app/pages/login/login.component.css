@@ -1,0 +1,115 @@
+/* CONTENEDOR GENERAL */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+}
+
+/* TARJETA */
+.card {
+  background: white;
+  padding: 35px;
+  width: 95%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 26px;
+  color: #111827;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+/* INPUTS */
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 14px;
+  color: #374151;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* BOTÓN */
+.btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 13px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+/* ERROR */
+.error {
+  color: #dc2626;
+  margin-bottom: 10px;
+}
+
+/* ENLACE EXTRA */
+.extra {
+  margin-top: 18px;
+}
+
+.extra a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 25px;
+  }
+}
+
+/* BOTÓN SECUNDARIO (CREAR CUENTA) */
+.btn-secondary {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border: 2px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #2563eb;
+  color: white;
+}
